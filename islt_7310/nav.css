@@ -1,9 +1,36 @@
-ul {list-style-type: none;}
+* {
+	padding: 0;
+}
 
-ul li{
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+	padding: 10px;
+}
+
+nav ul li{
     display: inline;
+	position: relative;
     padding: 10px;
     margin: 0px;
     border: 1px solid purple;
+    width: 52px;
+	background-color: white;
+}
 
+nav ul li ul {
+    display: none;
+    position: absolute;
+	left: -11px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li{
+    display: block;
 }
