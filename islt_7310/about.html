@@ -13,7 +13,7 @@ School/Term:  ISLT 7355 Fall 2023
 
 Developed: September 1, 2023
 
-Tested:  September 1, 2023; Passed on Firefox and Chrome browsers.
+Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
@@ -23,18 +23,37 @@ Tested:  September 1, 2023; Passed on Firefox and Chrome browsers.
 <head>
                <meta charset="utf-8">
                <title>About Me</title>
+			   
+			<link href="style.css" rel="stylesheet" type="text/css">
+			<link href="nav.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-    <header><h1>Maria Baldridge</h1></header>
+<div id="landscape"><img src="landscape_notele.png" alt="Digital landscape background"></div>
 
-    <nav></nav>
+<header><h1>Maria Baldridge</h1></header>
 
-        <main>
-            <h1>About Me</h1>
-            <h3>
-                Graduate Student in Learning Technologies and Design
-            </h3>
+<div id="content">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+			<li><a href="reflection.html">Reflection</a></li>
+            <li><a href="#projects.html">Projects</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+			<li><a href="#contact.html">Contact</a></li>
+        </ul>
+	</nav>
+	
+	<main>
+	<h2>About Me</h2>
+    <h3>Graduate Student in Learning Technologies and Design</h3>
         
             <p>
                 The path that I have taken to get here today has been quite an <em>experience</em>. I was born in the
@@ -55,8 +74,10 @@ Tested:  September 1, 2023; Passed on Firefox and Chrome browsers.
             </blockquote>
 
             <a href="resume.pdf">Resume</a>
-             
-        </main>
+	</main>
+
+</div>
+
 
     <footer> &copy;Maria Baldridge 2023 mrbx88@umsystem.edu</footer>
 </body>

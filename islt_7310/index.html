@@ -13,7 +13,7 @@ School/Term:  ISLT 7355 Fall 2023
 
 Developed: September 1, 2023
 
-Tested:  September 1, 2023; Passed on Firefox and Chrome browsers.
+Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
@@ -27,18 +27,27 @@ Tested:  September 1, 2023; Passed on Firefox and Chrome browsers.
         <link href="style.css" rel="stylesheet">
         <link href="nav.css" rel="stylesheet">
 </head>
-<body>
+<div id="landscape"><img src="landscape_notele.png" alt="Digital landscape background"></div>
 
-    <header><h1>Maria Baldridge</h1></header>
+<header><h1>Maria Baldridge</h1></header>
+
+<div id="content">
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#projects.html">Projects</a></li>
+			<li><a href="reflection.html">Reflection</a></li>
+            <li><a href="#projects.html">Projects</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+			<li><a href="#contact.html">Contact</a></li>
         </ul>
-
-    </nav>
+	</nav>
 
         <main>
             <h2>Welcome!</h2>
@@ -55,6 +64,8 @@ myself and the skills that I mastered to get here.
 
             </p>
         </main>
+		
+</div>
 
     <footer> &copy;Maria Baldridge 2023 mrbx88@umsystem.edu</footer>
 </body>
