@@ -1,24 +1,10 @@
-nav {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	border-bottom: 1px solid white;
-	background-color: rgba(75,0,130,0.2);
-	z-index: 10;
-}
 
-nav:hover {
-	background-color: rgba(75,0,130,1);
-}
 
 nav a {
 	text-decoration: none;
 	color: rgb(147,112,219);
 	padding: 10px 20px 10px 20px;
-	font-size: 20px;
+	font-size: 2.6vh;
 }
 
 nav a:hover {
