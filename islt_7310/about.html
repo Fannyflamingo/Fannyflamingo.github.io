@@ -21,26 +21,30 @@ Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
 
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <title>About Me</title>
+            <meta charset="utf-8">
+            <title>About Me</title>
 			   
 			<link href="style.css" rel="stylesheet" type="text/css">
 			<link href="nav.css" rel="stylesheet" type="text/css">
+			
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
-<div id="landscape"><img src="landscape_notele.png" alt="Digital landscape background"></div>
-
-<header><h1>Maria Baldridge</h1></header>
+<div id="landscape"><img src="landscape_notele.png" alt="digital landscape background"></div>
 
 <div id="content">
+	<header><h1>Maria Baldridge</h1></header>
 
     <nav>
+		<a href="#" id="menu-icon"></a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
 			<li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#projects.html">Projects</a>
+            <li><a href="projects.html">Projects</a>
                 <ul>
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
@@ -52,14 +56,10 @@ Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
 	</nav>
 	
 	<main>
-	<h2>About Me</h2>
-    <h3>Graduate Student in Learning Technologies and Design</h3>
-        
-		<img src="photo2.png" id="photo">
+		<h2>About Me</h2>
+		<h3>Graduate Student in Learning Technologies and Design</h3>
 		
-		<iframe width="280" height="158" src="https://www.youtube.com/embed/9unfG5t-x7U?si=Kax-lr1cj_fJmjQT" title="Video Resume" frameborder="0" id="video"></iframe> 
-		
-        <p id="text1">
+        <p id="text1"><img src="photo2.png" id="photo" alt="Photo of Maria" align="left">
         The path that I have taken to get here today has been quite an <em>experience</em>. I was born in the
         Philippines, but moved to the United States when I was a toddler. Since then, I’ve lived in Washington,
         southern Missouri, Louisiana, and have now settled in Columbia, MO with my family.<br><br>I have always
@@ -72,6 +72,10 @@ Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
         learn.
         </p>
         
+		<div class="videocontainer" id="videoresume">
+		<iframe src="https://www.youtube.com/embed/9unfG5t-x7U?si=Kax-lr1cj_fJmjQT" title="Video Resume" frameborder="0" class="iframe"></iframe> 
+		</div> 
+		
         <blockquote id="text2">
         “To love the journey is to accept no such end. I have found, through painful experience, that the most
         important step a person can take is always the next one.”—<em>Oathbringer</em> by Brandon Sanderson
@@ -79,10 +83,12 @@ Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
 
         <!-- <a href="resume.pdf">Resume</a> -->
 	</main>
+	
+	<footer> &copy;Maria Baldridge 2023 mrbx88@umsystem.edu&nbsp;</footer>
 
 </div>
 
 
-    <footer> &copy;Maria Baldridge 2023 mrbx88@umsystem.edu</footer>
+
 </body>
 </html>

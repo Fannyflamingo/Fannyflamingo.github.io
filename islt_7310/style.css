@@ -1,5 +1,8 @@
+/* top right bottom left */
+
 * {
 	padding: 0;
+	z-index: 2;
 }
 
 html {
@@ -14,52 +17,43 @@ body {
 	background-repeat: no-repeat;
 	background-position: bottom;
     background-attachment: fixed;
-	background: rgb(6,15,37);
-	background: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(23,30,51,1) 85%, rgba(26,36,52,1) 100%);
-	overflow: hidden;
+	background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(23,30,51,1) 85%, rgba(26,36,52,1) 100%);
 }
 
 #landscape {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	left: 0px;
 	bottom: 0px;
-	z-index: 0;
-	padding: 0;
+	z-index: 1;
+}
+
+#content {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"header"
+		"nav"
+		"main"
+		"footer";
+	width: 100%;
 }
 
 h1 {
 	color:white;
-	font-size: 5vh;
-	position: absolute;
-	top: 10%;
-	left: 5%;
+	font-size: 3.5rem;
+	padding-left: 5%;
+	grid-area: header;
 	}
-	
-	
-p {
-	padding: 0px 20px 0px 20px;
-	}
-
-#first::first-letter {
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 20px;
-	color: yellow;
-}
-
-.second {
-	text-indent: 20px;
-}
-
-
 
 nav {
 	grid-area: nav;
-	padding: 0px;
 	margin: 0px;
 	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 	background-color: rgba(75,0,130,0.2);
-	z-index: 10;
+	z-index: 3;
+	height: 4rem;
 }
 
 nav:hover {
@@ -69,86 +63,108 @@ nav:hover {
 main {
 	grid-area: main;
 	display: grid;
-	grid-template-columns: 30% 70%;
-	grid-template-rows: 10% 10% 50% 30%;
+	grid-template-columns: 70% 30%;
+	grid-column-gap: 20px;
+	grid-template-rows: auto;
 	grid-template-areas:
 		"h2 h2"
 		"h3 h3"
-		"photo text1"
-		"video text2";
-	overflow: auto;
+		"text1 rightmedia"
+		"text2 text2";
+	background: rgba(255,255,255,0.1);
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 h2 {
 	grid-area: h2;
-	padding-left: 5%;
-	font-size: 3vh;
+	font-size: 2rem;
 	}
 	
 h3 {
 	grid-area: h3;
-	padding-left: 5%;
-	font-size: 2vh;
+	font-size: 1.6rem;
 	}
 
 #photo {
 	grid-area: photo;
-	height: 90%;
+	width: 200px;
+	padding: 0 10px 1px 0; 
+}
+
+#cartoonmaria {
+	grid-area: rightmedia;
+	justify-self: center;
+	width: 100%;
+}
+
+#videoresume {
+	grid-area: rightmedia;
 	justify-self: center;
 }
 
-#video {
-	grid-area: video;
+.videocontainer {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /*for 16:9*/
+}
+
+.iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#reflectionphotos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	grid-area: rightmedia;
 	justify-self: center;
+}
+
+.ref_photo {
+	width: 90%;
+	padding: 10px;
 }
 
 #text1 {
 	grid-area: text1;
-	font-size: 1.8vh;
+	font-size: 1.2rem;
+	text-align: justify;
 }
+
 #text2 {
 	grid-area: text2;
-	font-size: 1.8vh;
+	font-size: 1rem;
+	justify-self: center;
 	}
 
-
-#content {
-	position: absolute;
-	display: grid;
-	grid-template-rows: 10% 90%;
-	grid-template-areas: 
-		"nav"
-		"main";
-	top: 20%;
-	width: 100%;
-	height: 70%;
-	border-bottom: 1px solid white;
-	border-top: 1px solid white;
-	background: rgba(255,255,255,0.1);
-}
-
 footer {
-	position: absolute;
-	right: 10px;
-	top: 91%;
-	font-size: 14px;
+	text-align: right;
+	width: 100%;
+	font-size: 0.9rem;
 	color: rgba(90,90,90,1);
+	grid-area: footer;
+	border-top: 1px solid white;
+	padding: 3px 0 10px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
 	main {
-	grid-area: main;
-	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 10% 10% 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
 	grid-template-areas:
 		"h2"
 		"h3"
-		"photo"
 		"text1"
-		"video"
+		"rightmedia"
 		"text2";
-	overflow: auto;
 	}
-	
+
 }

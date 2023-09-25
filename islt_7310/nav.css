@@ -4,7 +4,7 @@ nav a {
 	text-decoration: none;
 	color: rgb(147,112,219);
 	padding: 10px 20px 10px 20px;
-	font-size: 2.6vh;
+	font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -37,4 +37,65 @@ nav ul li ul li{
 	padding-top: 27px;
 	padding-bottom: 10px;
 	background-color: rgba(75,0,130,1);
+}
+
+#menu-icon {
+	background: url(menuicon50.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+	width: 50px;
+	height: 50px;
+}
+
+@media only screen and (max-width: 640px) {
+
+	#menu-icon {
+		display: block;
+		position: absolute;
+		right: 10px;
+	}
+	
+	/* nav ul li:hover ul { */
+		/* display: none; */
+	/* } */
+	
+	nav ul {
+		position: absolute;
+		right: 10px;
+		display: none;
+	}
+	
+	nav:hover ul {
+		display: block;
+	}
+	
+	nav ul li {
+		display: block;
+		position: relative;
+		text-align: left;
+		background-color: rgba(75,0,130,1);
+	}
+	
+	nav ul li ul {
+		display: block;
+		position: relative;
+
+		}
+
+	nav ul li ul li {
+		display: block;
+		width: auto;
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: rgba(75,0,130,1);
+		}
+		
+	nav ul li ul li:before {
+		content: "•"; /* Insert content that looks like bullets */
+		padding-left: 15px;
+		color: rgb(147,112,219);
+		}
+
+	
 }
