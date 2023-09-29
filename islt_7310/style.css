@@ -5,10 +5,6 @@
 	z-index: 2;
 }
 
-html {
-	height: 100%;
-}
-
 body {
 	color: white; 
 	font-family: 'Lato', sans-serif;
@@ -17,7 +13,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: bottom;
     background-attachment: fixed;
-	background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(23,30,51,1) 85%, rgba(26,36,52,1) 100%);
+	/* background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(23,30,51,1) 85%, rgba(26,36,52,1) 100%); */
+	background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(26,36,52,1) 100%);
 }
 
 #landscape {
@@ -40,8 +37,9 @@ body {
 }
 
 h1 {
-	color:white;
-	font-size: 3.5rem;
+	font-family: "Dancing Script", cursive;
+	/* color:white; */
+	font-size: 5rem;
 	padding-left: 5%;
 	grid-area: header;
 	}
@@ -152,7 +150,15 @@ footer {
 	color: rgba(90,90,90,1);
 	grid-area: footer;
 	border-top: 1px solid white;
-	padding: 3px 0 10px 0;
+	padding-top: 3px;
+}
+
+.icon {
+	width: 20px;
+}
+
+.icon:hover {
+	width: 30px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -167,4 +173,42 @@ footer {
 		"text2";
 	}
 
+}
+
+@media print {
+	body {
+		color: black;
+		background-color: white;
+		margin: 25mm 25mm 25mm 25mm;
+	}
+	
+	#landscape {display: none;}
+	
+	h1 {
+		font-size: 3rem;
+		padding-left: 0;
+		margin: 0;
+	}
+	h2 {font-size: 1.5rem;}
+	h3 {font-size: 1.2rem;}
+	
+	main {
+		padding-left: 0;
+		padding-right: 0;
+		grid-column-gap: 0;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"h2"
+			"h3"
+			"text1"
+			"text2";
+	}
+	
+	nav {display: none;}
+	
+	footer {color: black;}
+	
+	.icon {display: none;}
+	
 }

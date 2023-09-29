@@ -62,7 +62,8 @@ nav ul li ul li{
 	
 	nav ul {
 		position: absolute;
-		right: 10px;
+		right: 30px;
+		padding-top: 3.1rem;
 		display: none;
 	}
 	
@@ -74,19 +75,21 @@ nav ul li ul li{
 		display: block;
 		position: relative;
 		text-align: left;
+		padding-top: 5px;
+		padding-bottom: 10px;
 		background-color: rgba(75,0,130,1);
 	}
 	
 	nav ul li ul {
 		display: block;
 		position: relative;
-
+		padding-top: 0;
 		}
 
 	nav ul li ul li {
 		display: block;
 		width: auto;
-		padding-top: 0;
+		padding-top: 10px;
 		padding-bottom: 0;
 		background-color: rgba(75,0,130,1);
 		}
