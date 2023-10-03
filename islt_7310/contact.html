@@ -50,25 +50,22 @@ Tested:  September 17, 2023; Passed on Firefox and Chrome browsers.
                     <li><a href="projects.html#a3_title">Leadership and Social Responsibility</a></li>
                 </ul>
             </li>
-			<li><a href="#contact.html">Contact</a></li>
+			<li><a href="contact.html">Contact</a></li>
         </ul>
 	</nav>
 
         <main>
-            <h2>Welcome!</h2>
-            <p id="text1">
-                Hello! I am Maria Baldridge, a graduate student with the University of Missouri studying learning
-				technologies and design. Welcome to my portfolio! <br><br>
-				I have created this portfolio website to give you a brief look into my capabilities. Throughout this
-				portfolio you will learn a little bit about myself, and my professional and educational experiences. You
-				will have the chance to learn a little more about the work that I’ve done, the projects I’ve been
-				involved in, and my philosophies about learning and technology. As you move through this website,
-				you will also be able to view the products that I’ve created throughout this program. After you have
-				taken a look into my life and experiences, it is my hope that you will gain a better understanding of
-				myself and the skills that I mastered to get here.
-            </p>
-			
-			<img id="cartoonmaria" alt="Cartoon of Maria waving" src="cartoonmaria.png">
+            <h2>Contact Me</h2>
+			<form id="contactform" action="mailto:mrbx88@umsystem.edu?subject=Professional%20Website%20Contact" method="post" enctype="text/plain">
+				<label for="fname">First name:</label><br><input type="text" id="fname" name="fname" class="formtext" autofocus required></input><br><br>
+				<label for="lname">Last name:</label><br><input type="text" id="lname" name="lname" class="formtext" required></input><br><br>
+				<label for="email">Email:</label><br><input type="email" id="email" name="email" class="formtext" required></input><br><br>
+				<label for="message">Message:</label><br><textarea id="message" name="message" class="formtext" required></textarea><br><br>
+				<input type="submit" value="Submit" id="submit"></input><br><br>
+			</form>
+			<blockquote id="text2">
+			I look forward to hearing from you!
+			</blockquote>
         </main>
 		
 	<footer> &copy;Maria Baldridge 2023 <img src="phone.png" class="icon"> 1+888-888-8888 <img src="email.png" class="icon"> mrbx88@umsystem.edu&nbsp;</footer>

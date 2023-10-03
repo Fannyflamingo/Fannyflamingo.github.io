@@ -17,6 +17,8 @@ body {
 	background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(26,36,52,1) 100%);
 }
 
+a {color: lightblue;}
+
 #landscape {
 	position: fixed;
 	width: 100vw;
@@ -70,9 +72,16 @@ main {
 	grid-template-rows: auto;
 	grid-template-areas:
 		"h2 h2"
-		"h3 h3"
-		"text1 rightmedia"
-		"text2 text2";
+		"intro intro"
+		"a1_title a1_title"
+		"a1_desc a1_desc"
+		"a1_text a1_media"
+		"a2_title a2_title"
+		"a2_desc a2_desc"
+		"a2_text a2_media"
+		"a3_title a3_title"
+		"a3_desc a3_desc"
+		"a3_text a3_media";
 	background: rgba(255,255,255,0.1);
 	padding-left: 5%;
 	padding-right: 5%;
@@ -84,68 +93,47 @@ h2 {
 	}
 	
 h3 {
-	grid-area: h3;
 	font-size: 1.6rem;
 	}
-
-#photo {
-	grid-area: photo;
-	width: 200px;
-	padding: 0 10px 1px 0; 
+	
+h4 {
+	font-size: 1.2rem;
+	font-style: italic;
+	color: gray;
+	margin: 0;
 }
 
-#cartoonmaria {
-	grid-area: rightmedia;
-	justify-self: center;
-	width: 100%;
-}
-
-#videoresume {
-	grid-area: rightmedia;
-	justify-self: center;
-}
-
-.videocontainer {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	padding-top: 56.25%; /*for 16:9*/
-}
-
-.iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-}
-
-#reflectionphotos {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	grid-area: rightmedia;
-	justify-self: center;
-}
-
-.ref_photo {
-	width: 90%;
-	padding: 10px;
-}
-
-#text1 {
-	grid-area: text1;
+.text {
+	height: 85vh;
 	font-size: 1.2rem;
 	text-align: justify;
 }
 
-#text2 {
-	grid-area: text2;
-	font-size: 1rem;
+.proj_media {
 	justify-self: center;
-	}
+}
+
+.proj_photo {
+	width: 90%;
+	padding: 20px;
+}
+
+#intro {grid-area: intro;}
+
+#a1_title {grid-area: a1_title;}
+#a1_desc {grid-area: a1_desc;}
+#a1_text {grid-area: a1_text;}
+#a1_media {grid-area: a1_media;}
+
+#a2_title {grid-area: a2_title;}
+#a2_desc {grid-area: a2_desc;}
+#a2_text {grid-area: a2_text;}
+#a2_media {grid-area: a2_media;}
+
+#a3_title {grid-area: a3_title;}
+#a3_desc {grid-area: a3_desc;}
+#a3_text {grid-area: a3_text;}
+#a3_media {grid-area: a3_media;}
 
 footer {
 	text-align: right;
@@ -190,14 +178,25 @@ footer {
 	grid-template-rows: auto;
 	grid-template-areas:
 		"h2"
-		"h3"
-		"text1"
-		"rightmedia"
-		"text2";
+		"intro"
+		"a1_title"
+		"a1_desc"
+		"a1_text"
+		"a1_media"
+		"a2_title"
+		"a2_desc"
+		"a2_text"
+		"a2_media"
+		"a3_title"
+		"a3_desc"
+		"a3_text"
+		"a3_media";
 	}
 	
-	.formtext {
-	width: 100%;
+	.text {
+	height: auto;
+	}
+
 }
 
 }

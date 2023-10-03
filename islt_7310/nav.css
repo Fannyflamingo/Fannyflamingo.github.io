@@ -3,7 +3,7 @@
 nav a {
 	text-decoration: none;
 	color: rgb(147,112,219);
-	padding: 10px 20px 10px 20px;
+	padding: 10px 40px 10px 0px;
 	font-size: 1.5rem;
 }
 
@@ -36,6 +36,7 @@ nav ul li ul li{
 	width: 200px;
 	padding-top: 27px;
 	padding-bottom: 10px;
+	padding-left: 20px;
 	background-color: rgba(75,0,130,1);
 }
 
