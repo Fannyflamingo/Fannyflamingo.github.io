@@ -17,6 +17,11 @@ body {
 	background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(26,36,52,1) 100%);
 }
 
+a{text-decoration: none;}
+
+a:visited {color: rgb(147,112,219);}
+a:hover {color: hotpink;}
+
 #landscape {
 	position: fixed;
 	width: 100vw;
@@ -40,12 +45,13 @@ body {
 	width: 100%;
 }
 
-h1 {
+#headtext {
 	font-family: "Dancing Script", cursive;
-	/* color:white; */
+	color:white; 
 	font-size: 5rem;
 	padding-left: 5%;
 	grid-area: header;
+	text-decoration: none;
 	}
 
 nav {
@@ -121,6 +127,7 @@ h3 {
 	right: 0;
 	width: 100%;
 	height: 100%;
+	border: none;
 }
 
 #reflectionphotos {
@@ -129,11 +136,6 @@ h3 {
 	align-items: center;
 	grid-area: rightmedia;
 	justify-self: center;
-}
-
-.ref_photo {
-	width: 90%;
-	padding: 10px;
 }
 
 #table {
@@ -225,7 +227,7 @@ footer {
 	
 	.formtext {
 	width: 100%;
-}
+	}
 
 }
 
