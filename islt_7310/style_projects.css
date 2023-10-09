@@ -42,12 +42,13 @@ a {color: lightblue;}
 	width: 100%;
 }
 
-h1 {
+#headtext {
 	font-family: "Dancing Script", cursive;
-	/* color:white; */
+	color:white; 
 	font-size: 5rem;
 	padding-left: 5%;
 	grid-area: header;
+	text-decoration: none;
 	}
 
 nav {
