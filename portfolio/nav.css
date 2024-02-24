@@ -33,7 +33,7 @@ nav ul li:hover ul {
 
 nav ul li ul li{
     display: block;
-	width: 200px;
+	width: 300px;
 	padding-top: 27px;
 	padding-bottom: 10px;
 	padding-left: 20px;
@@ -95,11 +95,11 @@ nav ul li ul li{
 		background-color: rgba(75,0,130,1);
 		}
 		
-	nav ul li ul li:before {
-		content: "•"; /* Insert content that looks like bullets */
-		padding-left: 15px;
-		color: rgb(147,112,219);
-		}
+	/* nav ul li ul li:before { */
+		/* content: "•"; /* Insert content that looks like bullets */ */
+		/* padding-left: 15px; */
+		/* color: rgb(147,112,219); */
+		/* } */
 
 	
 }

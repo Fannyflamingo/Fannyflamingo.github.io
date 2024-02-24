@@ -17,7 +17,7 @@ body {
 	background-image: linear-gradient(180deg, rgba(6,15,37,1) 0%, rgba(26,36,52,1) 100%);
 }
 
-a{text-decoration: none;}
+a {color: rgb(147,112,219);}
 
 a:visited {color: rgb(147,112,219);}
 a:hover {color: hotpink;}
@@ -76,9 +76,8 @@ main {
 	grid-template-rows: auto;
 	grid-template-areas:
 		"h2 h2"
-		"h3 h3"
-		"text1 rightmedia"
-		"text2 text2";
+		"table table";
+
 	background: rgba(255,255,255,0.1);
 	padding-left: 5%;
 	padding-right: 5%;
@@ -90,62 +89,21 @@ h2 {
 	}
 	
 h3 {
-	grid-area: h3;
 	font-size: 1.6rem;
 	}
-
-#photo {
-	float: left;
-	grid-area: photo;
-	width: 200px;
-	padding: 0 10px 1px 0; 
-}
-
-#cartoonmaria {
-	grid-area: rightmedia;
-	justify-self: center;
-	width: 100%;
-}
-
-#videoresume {
-	grid-area: rightmedia;
-	justify-self: center;
-}
-
-.videocontainer {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	padding-top: 56.25%; /*for 16:9*/
-}
-
-.iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	border: none;
-}
-
-#rightcontainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	grid-area: rightmedia;
-	justify-self: center;
+	
+h4 {
+	font-size: 1.2rem;
+	font-style: italic;
+	color: gray;
+	margin: 0;
 }
 
 #table {
 	border: 2px solid white;
 	border-collapse: collapse;
 	margin: 20px;
-}
-
-#resumelink {
-	font-size: 2.0rem;
+	grid-area: table;
 }
 
 tr:nth-child(even) {
@@ -167,18 +125,6 @@ th, td {
 	border: 1px solid gray;
 	border-collapse: collapse;
 }
-
-#text1 {
-	grid-area: text1;
-	font-size: 1.2rem;
-	text-align: justify;
-}
-
-#text2 {
-	grid-area: text2;
-	font-size: 1rem;
-	justify-self: center;
-	}
 
 footer {
 	text-align: right;
@@ -223,15 +169,14 @@ footer {
 	grid-template-rows: auto;
 	grid-template-areas:
 		"h2"
-		"h3"
-		"text1"
-		"rightmedia"
-		"text2";
+		"table";
 	}
 	
-	.formtext {
-	width: 100%;
+	.text {
+	height: auto;
 	}
+
+}
 
 }
 
